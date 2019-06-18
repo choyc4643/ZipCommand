@@ -182,14 +182,14 @@ public class Zip {
 
 		// add options by using OptionBuilder
 		options.addOption(Option.builder("b").longOpt("input")
-				.desc("Set an input file path")
+				.desc("Set an input file path. You must write this option to implement this program.")
 				.hasArg()
 				.argName("input path")
 				.required()
 				.build());
 
 		options.addOption(Option.builder("o").longOpt("output")
-				.desc("Set an first output file path")
+				.desc("Set an first output file path. You must write this option to implement this program.")
 				.hasArg()
 				.argName("output path")
 				.required()
