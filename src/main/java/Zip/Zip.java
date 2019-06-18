@@ -196,14 +196,14 @@ public class Zip {
 				.build());
 		
 		options.addOption(Option.builder("i").longOpt("include")
-				.desc("Set an necessery word in file name")
+				.desc("Set an necessery word in file name. You can not use this option with -ic option.")
 				.hasArg()
 				.argName("include word")
 				.required()
 				.build());
 		
 		options.addOption(Option.builder("ic").longOpt("ignore")
-				.desc("Set an ignore word in file name")
+				.desc("Set an ignore word in file name. You can not use this option with -i option.")
 				.hasArg()
 				.argName("ignore word")
 				.required()
